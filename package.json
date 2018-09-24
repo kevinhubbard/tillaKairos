@@ -1,29 +1,16 @@
 {
-  "name": "tilla-kairos",
-  "version": "0.1.0",
+  "name": "tilla",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node ./bin/www"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kevinhubbard/tillaKairos.git"
-  },
-  "author": "kevin h",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kevinhubbard/tillaKairos/issues"
-  },
-  "homepage": "https://github.com/kevinhubbard/tillaKairos#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
+  }
 }
