@@ -27,7 +27,12 @@ li{
 	margin: auto;
 }
 
-
+form {
+	display: inline;
+}
+#socialMedia{
+	text-align: center;
+}
 #bio{
 	background-color: red;
 	height: 500px;
@@ -36,4 +41,8 @@ li{
 #player{
 	background-color: blue;
 	height: 500px;
+}
+
+footer{
+	text-align: center;
 }
