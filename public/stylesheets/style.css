@@ -10,6 +10,7 @@ a {
 #header{
 	background-color: green;
 	height:500px;
+	margin: auto;
 }
 
 #logo{
@@ -18,14 +19,30 @@ a {
 	margin: auto;
 }
 
-ul{
+/* ul{
 text-align: center;
 }
 li{
 	display: inline-block;
 	list-style-type: none;
 	margin: auto;
+} */
+
+#header ul{
+	text-align: center;
 }
+
+#nav  li {
+	display: inline-block;
+	background-color: blue;
+}
+
+#nav a{
+	background-color: pink;
+	margin:50px;
+
+}
+
 
 form {
 	display: inline;
@@ -38,11 +55,21 @@ form {
 	height: 500px;
 }
 
-#player{
-	background-color: blue;
-	height: 500px;
-}
+
 
 footer{
 	text-align: center;
+}
+
+.navLinks {
+	font-family: sans-serif;
+	font-size: 24px;
+}
+
+#about{
+	padding: 10px 10px 10px 10px;
+	line-height: 1.5;
+	font-family: sans-serif;
+	font-size: 20px;
+
 }

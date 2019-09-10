@@ -1,17 +1,13 @@
-var audio = new Audio();
-var trackList = ['./audio/choose.mp3'];
-var player = document.getElementById('player');
 
-function initAudioPlayer(){
-	var audioElement = document.createElement('audio');
-		audioElement.setAttribute('controls', 'controls');
-	var audioSrc = document.createElement('source');
-		audioSrc.setAttribute('src', trackList[0]);
-		audioSrc.setAttribute('type', 'audio/mp3');
-	audioElement.appendChild(audioSrc);
-	player.appendChild(audioElement);
-}
+init();
 
-window.addEventListener('load', function(){
-	initAudioPlayer();
-});
+function init(){
+	var currentSong = 0;
+	$('#audio')[0].src = $('#playlist li a')[0];
+	$('#playlist li a').click(function(e){
+		e.preventDefault();
+		$('#audio')[0].src = this;
+		$('#audio')[0].play();
+	});
+	
+}	
